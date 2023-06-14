@@ -1,0 +1,31 @@
+databases:
+  api:
+    type: postgresql
+    db: novo_api
+    host: novo-api-db-read-replica.cddxgktqagcx.us-east-1.rds.amazonaws.com
+    port: 4040
+    user: sarfraz
+    pw: Macbook@1994
+  onboarding:
+    type: postgresql
+    db: prod_onboarding
+    host: novo-onboarding-read-replica.cddxgktqagcx.us-east-1.rds.amazonaws.com
+    port: 4040
+    user: Sarfraz
+    pw: Macbook@1994
+  warehouse:
+    type: postgresql
+    db: segment_prod
+    host: prod-data-warehouse.cddxgktqagcx.us-east-1.rds.amazonaws.com
+    port: 4038
+    user: Sarfraz
+    pw: Macbook@1994
+  snowflake:
+    type: snowflake
+    db: FIVETRAN_DB
+    schema: PROD_NOVO_ONBOARDING_PUBLIC
+    wh: COMPUTE_WH
+    host: fivex-bank_novo_enterprise
+    user: Sarfraz
+    pw: Macbook@1994
+    role: BI_ROLE

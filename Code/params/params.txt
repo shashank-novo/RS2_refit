@@ -1,0 +1,13 @@
+{"seed" : 42,
+"test_size" : 0.3,
+"target" : "DPD_plus_15",
+"corr_thresh": 0.3,
+"vif_thresh": 7,
+"model" : "LogisticRegression()",
+"forward_move" : "False",
+"num_features" : 10,
+"bins" : 5,
+"upper_iv" : 0.5,
+"lower_iv" : 0.02,
+"params_log_reg" : {"penalty": "l1", "random_state": 42, "solver": "liblinear", "class_weight":"{1:0.92,0:0.08}"},
+"pipeline_os" : {"scale_type" : "StandardScaler", "target" : "DPD_plus_15"}}
